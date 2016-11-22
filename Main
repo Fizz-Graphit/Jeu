@@ -1,15 +1,16 @@
+
 class Personnage():
     def soif_de_pouvoir(self):
-        pass
+        print"\nVous volez devenir le maitre du monde pour cela il vous faudra dominer les epoques.\nVous devrez donc choisir les pays lesquelles vous voulez dominer le monde ou meme le cree le votre."
         
     def soif_de_richesse(self):
-        pass
+        print"\nIl vous suffit de voler les plus grandes inventions du monde.\nPour cela tuer les createur et donner votre nom au decouverte techonologie majeur de l'histoire."
     
-    def curiosite(self):
-        pass
+    def genocidaire(self):
+        print"\nVous avez modifie votre adn de sorte a ce que plus aucun lien n'existe entre vous et les humain et toutes les autres espece existante.\nVous remonterez le temps annees apres annees pour detruire l'humanite, siecle apres siecle pour finir par detruir les dinausaurs."
     
-    def pacifiste(self):
-        pass
+    def pacifiste_curiosite(self):
+        print"Passionne d'histoir votre but n'est que de voir de vos yeux les histoires etudie dans les livres sans altere c'est histoire."
     
 class Missions():
     def soif_de_pouvoir(self):
@@ -18,16 +19,17 @@ class Missions():
     def soif_de_richesse(self):
         pass
     
-    def curiosite(self):
+    def genocidaire(self):
         pass
     
-    def pacifiste(self):
+    def pacifiste_curiosite(self):
         pass 
     
 class Debut():
     def choix_personnage(self, Personnage):
         Personnage = Personnage()
-        choix_personnage = input("\nVeuillez choisir votre personnage:\n1)Soif de pouvoir\n2)Soif de richesse\n3)curiosite\n4)pacifiste\n")
+        print "Entrer le chiffre devant le personnage correspondant pour le selectionner"
+        choix_personnage = input("\nVeuillez choisir votre personnage:\n1)Soif de pouvoir\n2)Soif de richesse\n3)Genocidaire\n4)Pacifiste/Curiosite\n")
         
         if choix_personnage == 1:
             personnage = Personnage.soif_de_pouvoir()
@@ -38,11 +40,11 @@ class Debut():
             return personnage
             
         elif choix_personnage == 3:
-            personnage = Personnage.curiosite()
+            personnage = Personnage.genocidaire()
             return personnage
             
         elif choix_personnage == 4:
-            personnage = Personnage.pacifiste()
+            personnage = Personnage.pacifiste_curiosite()
             return personnage
         
         else:
@@ -56,5 +58,4 @@ if __name__ == "__main__":
      Debut = Debut()
      personnage = Debut.choix_personnage(Personnage)
      print personnage
-     
-       
+
