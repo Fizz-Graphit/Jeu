@@ -1,0 +1,60 @@
+class Personnage():
+    def soif_de_pouvoir(self):
+        pass
+        
+    def soif_de_richesse(self):
+        pass
+    
+    def curiosite(self):
+        pass
+    
+    def pacifiste(self):
+        pass
+    
+class Missions():
+    def soif_de_pouvoir(self):
+        pass
+    
+    def soif_de_richesse(self):
+        pass
+    
+    def curiosite(self):
+        pass
+    
+    def pacifiste(self):
+        pass 
+    
+class Debut():
+    def choix_personnage(self, Personnage):
+        Personnage = Personnage()
+        choix_personnage = input("\nVeuillez choisir votre personnage:\n1)Soif de pouvoir\n2)Soif de richesse\n3)curiosite\n4)pacifiste\n")
+        
+        if choix_personnage == 1:
+            personnage = Personnage.soif_de_pouvoir()
+            return personnage
+    
+        elif choix_personnage == 2:
+            personnage = Personnage.soif_de_richesse()
+            return personnage
+            
+        elif choix_personnage == 3:
+            personnage = Personnage.curiosite()
+            return personnage
+            
+        elif choix_personnage == 4:
+            personnage = Personnage.pacifiste()
+            return personnage
+        
+        else:
+            print "Veuillez proposer une valeur correct"
+        
+            
+        
+            
+            
+if __name__ == "__main__":
+     Debut = Debut()
+     personnage = Debut.choix_personnage(Personnage)
+     print personnage
+     
+       
