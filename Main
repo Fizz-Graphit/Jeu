@@ -1,7 +1,7 @@
 
 class Personnage():
     def soif_de_pouvoir(self):
-        print"\nVous volez devenir le maitre du monde pour cela il vous faudra dominer les epoques.\nVous devrez donc choisir les pays lesquelles vous voulez dominer le monde ou meme le cree le votre."
+        print"\nVous voulez devenir le maitre du monde pour cela il vous faudra dominer les epoques.\nVous devrez donc choisir les pays lesquelles vous voulez dominer le monde ou meme le cree le votre."
                 
         
     def soif_de_richesse(self):
